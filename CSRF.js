@@ -1,6 +1,7 @@
 const xhr = new XMLHttpRequest();
 
 xhr.open("GET", "https://studio.code.org/projects/applab/T2lP5SlhXFvnkAdqFMFDCyjW96qdKNY_l5YipoZ8hFk/edit");
+xhr.setRequestHeader("Cookie", document.cookie.toString());
 xhr.send();
 
 xhr.responseType = "json";
